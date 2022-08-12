@@ -40,15 +40,13 @@ public class DepartmentListController implements Initializable{
 		System.out.println("SEXO GRATIS");
 	}
 	
+	public void setDepartmentService(DepartmentService service) {
+		this.service = service;
+	}
+	
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
 		initializeNodes();
-		setDepartmentService(new DepartmentService());
-		updateTableView();
-	}
-	
-	public void setDepartmentService(DepartmentService service) {
-		this.service = service;
 	}
 	
 	private void initializeNodes() {
