@@ -169,9 +169,8 @@ public class SellerDaoJDBC implements SellerDao{
 						dep
 				);
 				list.add(seller);
-				return list;
 			}
-			return null;
+			return list;
 		}catch(SQLException e) {
 			throw new DbException(e.getMessage());
 		}
