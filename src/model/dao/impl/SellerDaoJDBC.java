@@ -117,7 +117,7 @@ public class SellerDaoJDBC implements SellerDao{
 						rs.getInt("Id"),
 						rs.getString("Name"),
 						rs.getString("Email"),
-						rs.getDate("BirthDate"),
+						new java.util.Date(rs.getTimestamp("BirthDate").getTime()),
 						rs.getDouble("BaseSalary"),
 						dep
 				);
@@ -164,7 +164,7 @@ public class SellerDaoJDBC implements SellerDao{
 						rs.getInt("Id"),
 						rs.getString("Name"),
 						rs.getString("Email"),
-						rs.getDate("BirthDate"),
+						new java.util.Date(rs.getTimestamp("BirthDate").getTime()),
 						rs.getDouble("BaseSalary"),
 						dep
 				);
@@ -213,7 +213,7 @@ public class SellerDaoJDBC implements SellerDao{
 						rs.getInt("Id"),
 						rs.getString("Name"),
 						rs.getString("Email"),
-						rs.getDate("BirthDate"),
+						new java.util.Date(rs.getTimestamp("BirthDate").getTime()),
 						rs.getDouble("BaseSalary"),
 						dep
 				);
